@@ -1,23 +1,16 @@
 import javax.swing.JOptionPane;
-
 public class App {
     public static void main(String[] args) throws Exception {
-        boolean start = true;
-
+        boolean start = true; //creating boolean for while loop
         while (start){
-            String tOrF = JOptionPane.showInputDialog("Is the course code for our class ICS4U? [T] or [F]:\n");
-            if (tOrF.equals("T")){
-                start = false;
-                JOptionPane.showMessageDialog(null, "Yes! The couse code is ICS4U!");
+            String tOrF = JOptionPane.showInputDialog("Is the course code for our class ICS4U? [T] or [F]"); //getting input as a string
+            if (tOrF.equals("T")){ //if string equals T
+                start = false; //end loop
+                JOptionPane.showMessageDialog(null, "Yes! The couse code is ICS4U!"); //display message
             }
-            else {
+            else { //otherwise F was entered, or something else entirely. program loops
                 JOptionPane.showMessageDialog(null, "Try again!");
             }
-
-
         }
-
-    
-
     }
 }

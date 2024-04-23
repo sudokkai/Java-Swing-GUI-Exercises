@@ -1,16 +1,8 @@
-import javax.swing.JOptionPane;
+import GuessNumberJava.GuessNumberJava;
+import GuessNumberJava.trueOrFalse;
 public class App {
-    public static void main(String[] args) throws Exception {
-        boolean start = true; //creating boolean for while loop
-        while (start){
-            String tOrF = JOptionPane.showInputDialog("Is the course code for our class ICS4U? [T] or [F]"); //getting input as a string
-            if (tOrF.equals("T")){ //if string equals T
-                start = false; //end loop
-                JOptionPane.showMessageDialog(null, "Yes! The couse code is ICS4U!"); //display message
-            }
-            else { //otherwise F was entered, or something else entirely. program loops
-                JOptionPane.showMessageDialog(null, "Try again!");
-            }
-        }
+    public static void main(String[] args) {
+        GuessNumberJava.GuessNumberJava();
+        trueOrFalse.tureOrFalse();
     }
 }

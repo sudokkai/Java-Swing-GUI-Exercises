@@ -1,8 +1,8 @@
-package GuessNumberJava;
+
 
 import javax.swing.JOptionPane;
 public class GuessNumberJava {
-    public static void GuessNumberJava(String[] args) {
+    public static void GuessNumberJavaGame() {
         boolean start = true; //boolean for while loop
         double num = Math.round(Math.random()*100); //creating a random number between 100 and 0
         while (start){ //while loop

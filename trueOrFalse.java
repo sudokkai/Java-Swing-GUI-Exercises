@@ -23,7 +23,6 @@ public class trueOrFalse {
             
         }
         */
-        trueOrFalse tfObject = new trueOrFalse();
-        tfObject.trueFalseGame();
+        
     }
 }
